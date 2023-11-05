@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script > 
+        var infor = [
+            {
+                id: 1,
+                name: 'Tai',
+                age: 20
+            },
+        {
+            id: 2,
+            name: 'Truyen',
+            age: 21
+        },
+        {
+            id: 1,
+            name: 'Dai',
+            age: 22
+        },
+        {
+            id: 1,
+            name: 'An',
+            age: 24
+        },
+    ]
+    
+        function AgeHanler (ac, current) {
+            return ac + current.age
+        }
+
+        var totalAge = infor.reduce(AgeHanler, 0)
+
+        console.log(totalAge)
+    </script>
+</body>
+</html> 
